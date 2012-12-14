@@ -3,4 +3,4 @@ project(langs-dev)
 
 find_package(catkin REQUIRED)
 
-catkin_package(CATKIN_DEPENDS gencpp genlisp genpy)
+catkin_package(CATKIN_DEPENDS message_generation)

@@ -10,12 +10,11 @@
   <url type="repository">https://github.com/ros/langs-dev</url>
 
   <build_depend>catkin</build_depend>
-  <build_depend>gencpp</build_depend>
-  <build_depend>genlisp</build_depend>
-  <build_depend>genpy</build_depend>
 
-  <run_depend>catkin</run_depend>
-  <run_depend>gencpp</run_depend> <!-- provide the generators to wet downstream packages -->
-  <run_depend>genlisp</run_depend> <!-- provide the generators to wet downstream packages -->
-  <run_depend>genpy</run_depend> <!-- provide the generators to wet downstream packages -->
+  <!-- provide the generators to wet downstream packages -->
+  <run_depend>message_generation</run_depend>
+
+  <export>
+    <deprecated>Instead build_depend on message_generation and run_depend on message_runtime</deprecated>
+  </export>
 </package>
